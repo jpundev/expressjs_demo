@@ -62,7 +62,7 @@ router.get('/2/from/:from/to/:to/state/:state',(req,res)=>{
                         accumulation += getValue(years[x],results);
                     }
                     //Return the value 
-                    res.send(`Fetch Successful, Electric power carbon dioxide emission quantity from ${req.params['state']} ( ${req.params['from']} - ${req.params['to']} )   is ${accumulation}`)
+                    res.send(`Fetch Successful, Electric power carbon dioxide emission quantity from ${req.params['state']} ( ${req.params['from']} - ${req.params['to']} )   is ${accumulation} million`)
                 });
                 break;
             }
