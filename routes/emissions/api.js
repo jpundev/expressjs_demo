@@ -25,7 +25,7 @@ router.get('/1/year/:year/state/:state',(req,res)=>{
                 .then((results)=>{
                     //Return the value
                     let value = getValue(req.params['year'],results);
-                    res.send(`Fetch Successful, Electric power carbon dioxide emission quantity from ${req.params['state']} from ${req.params['year']} is ${value}`)
+                    res.send(`Fetch Successful, Electric power carbon dioxide emission quantity from ${req.params['state']} from ${req.params['year']} is ${value} million`)
                 });
                 break;
             }
